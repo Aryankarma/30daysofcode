@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "step": "Step 1",
+    "subheading": "Register Now!"
+  },
+  {
+    "id": 2,
+    "step": "Step 2",
+    "subheading": "Complete a short coding test"
+  },
+  {
+    "id": 3,
+    "step": "Step 3",
+    "subheading": "Screening Call"
+  }
+]

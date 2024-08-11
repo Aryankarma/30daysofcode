@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "Who should use the app?",
+    "answer": "The app is designed for anyone looking to improve their productivity and manage tasks more efficiently, whether you're a student, professional, or business owner."
+  },
+  {
+    "id": 2,
+    "question": "What is included with my subscription?",
+    "answer": "Your subscription includes access to all premium features of the app, regular updates, customer support, and exclusive content tailored to your needs."
+  },
+  {
+    "id": 3,
+    "question": "How do I get paid?",
+    "answer": "Payments are processed automatically through the app based on your linked payment method. You can also track and manage your earnings in the account section."
+  },
+  {
+    "id": 4,
+    "question": "Is my personal information safe?",
+    "answer": "Yes, your personal information is protected with industry-standard encryption and is never shared with third parties without your consent."
+  },
+  {
+    "id": 5,
+    "question": "How can we get in touch?",
+    "answer": "You can contact us through our support page, email, or directly within the app's help section. We are here to assist you 24/7."
+  }
+]

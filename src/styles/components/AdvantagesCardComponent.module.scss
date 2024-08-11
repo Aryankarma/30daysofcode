@@ -1,0 +1,26 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 30px;
+
+  .card {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    color: black;
+    text-align: left;
+
+    .boxTop {
+      display: flex;
+      gap: 15px;
+    }
+    
+    img {
+      height: 25px;
+      width: 25px;
+    }
+  }
+}

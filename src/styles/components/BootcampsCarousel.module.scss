@@ -1,0 +1,29 @@
+.carouselCards {
+  width: calc(308px*3 + 20px*5);
+  padding: 20px;
+  margin-left: auto;
+  
+  .carouselCard{
+    background-color: white;
+    max-width: 308px;
+    height: 425px;
+    display: flex !important;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 0 #33333350;
+    margin: 20px 0;
+
+
+    img{
+      border-radius: 15px 15px 0 0;
+    }
+    .content{
+      display: flex !important;
+      flex-direction: column;
+      height: max-content;
+      flex-grow: 1;
+      justify-content: space-between;
+      padding: 20px 15px;
+    }
+  }
+}

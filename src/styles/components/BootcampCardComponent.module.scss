@@ -1,0 +1,75 @@
+$mainPurple: #7848f4;
+
+// @media (min-width: 992px) {
+//   .cards {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+// @media (min-width: 576px) {
+//   .cards {
+//     grid-template-columns: 1fr;
+//   }
+// }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+
+  .card {
+    // width: 350px;
+    // height: 245px;
+    background-color: #3a3a3a;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+
+    .tags {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .tag {
+        padding: 8px 20px;
+        outline: 1px solid white;
+        color: white;
+        border-radius: 5px;
+      }
+    }
+    .content {
+      position: relative;
+      p {
+        margin: 12.5px 0;
+        font-size: 14px;
+      }
+      button {
+        background-color: $mainPurple;
+        border: $mainPurple;
+      }
+      .heartOutline,
+      .redheart {
+        height: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .falmework {
+        position: absolute;
+        right: 0%;
+        bottom: -5%;
+        z-index: 0;
+      }
+      .applied {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: white;
+      }
+    }
+  }
+}

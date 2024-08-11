@@ -1,0 +1,22 @@
+[
+  {
+    "iconAlt": "mentorship",
+    "title": "Get Personal Mentorship",
+    "description": "Get personalized attention. Your solution will be viewed and guided by our mentors individually, and learn at your own pace."
+  },
+  {
+    "iconAlt": "concepts",
+    "title": "Clear Your Basic Concepts",
+    "description": "Attempt new questions every day and clear your basic concepts which are required to crack any company interview. Start today and get placed tomorrow."
+  },
+  {
+    "iconAlt": "practice",
+    "title": "Do Hands on Code practice",
+    "description": "You don’t get better at swimming by watching others. Coding is no different. Practice as you learn with live code environments inside your browser."
+  },
+  {
+    "iconAlt": "self_analysis",
+    "title": "Do self analysis",
+    "description": "Compare your solutions with community solutions and improve your coding as you move forward and solve new problems."
+  }
+]

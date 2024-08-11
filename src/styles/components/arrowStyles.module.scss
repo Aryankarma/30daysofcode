@@ -1,0 +1,14 @@
+.rightArrow{
+    scale: 1.5;
+ &:hover{
+    transform: translate(10%,0%);
+    transition: 300ms;
+ }
+}
+.leftArrow{
+    scale: 1.5;
+ &:hover{
+    transform: translate(-10%,0%);
+    transition: 300ms;
+ }
+}

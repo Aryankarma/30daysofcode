@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "tags": ["Figma", "Tech", "Free"],
+    "title": "UI Designer",
+    "description": "Learn UI/UX Designing with Datacode",
+    "startDate": "25 April 2024",
+    "appliedCount": 24,
+    "isFavorite": false
+  },
+  {
+    "id": 2,
+    "tags": ["JavaScript", "Coding", "Paid"],
+    "title": "JavaScript Bootcamp",
+    "description": "Master JavaScript with hands-on projects",
+    "startDate": "10 May 2024",
+    "appliedCount": 36,
+    "isFavorite": true
+  },
+  {
+    "id": 3,
+    "tags": ["React", "Frontend", "Free"],
+    "title": "React Developer",
+    "description": "Become proficient in React and build interactive UIs",
+    "startDate": "15 June 2024",
+    "appliedCount": 18,
+    "isFavorite": false
+  },
+  {
+    "id": 4,
+    "tags": ["Python", "AI", "Scholarship"],
+    "title": "Python for AI",
+    "description": "Learn Python and its applications in AI and ML",
+    "startDate": "5 July 2024",
+    "appliedCount": 42,
+    "isFavorite": true
+  },
+  {
+    "id": 5,
+    "tags": ["Full Stack",  "Web", "Paid"],
+    "title": "Full Stack Developer",
+    "description": "Become a Full Stack Developer with MERN stack",
+    "startDate": "20 August 2024",
+    "appliedCount": 50,
+    "isFavorite": false
+  },
+  {
+    "id": 6,
+    "tags": ["AI/ML", "Python", "Free"],
+    "title": "Data Science with Python",
+    "description": "Learn Data Science with Python from basics to advanced",
+    "startDate": "1 September 2024",
+    "appliedCount": 30,
+    "isFavorite": true
+  }
+]

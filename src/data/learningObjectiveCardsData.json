@@ -1,0 +1,22 @@
+[
+  {
+    "id":1,
+    "title": "Coding Challenges",
+    "description": "Get your hands dirty in code writing your very own solution to a problem."
+  },
+  {
+    "id": 2,
+    "title": "Foundational Skills",
+    "description": "Revise your basic coding fundamentals, which are required to crack any technical interview."
+  },
+  {
+    "id": 3,
+    "title": "Problem Mastery",
+    "description": "Learn problem-solving approaches, which you can apply to solve any kind of problem."
+  },
+  {
+    "id": 4,
+    "title": "Advanced Solutions",
+    "description": "Broaden your thinking sphere, and go beyond basic while trying to solve complex problems."
+  }
+]

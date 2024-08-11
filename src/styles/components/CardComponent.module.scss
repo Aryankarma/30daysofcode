@@ -1,0 +1,36 @@
+.cards {
+  width: 50%;
+  height: max;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .card{
+      height: 170px;
+      width: 240px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+      font-size: 18px;
+      position: absolute;
+      
+      img{
+        padding-bottom: 10px;
+      }
+  }
+}
+
+.card:nth-child(1) {
+  top: -10%;
+  transform: translate(-70%, 50%);
+}
+
+.card:nth-child(3) {
+  transform: translateY(50%);
+}
+
+.card:nth-child(2) {
+  top: -10%;
+  transform: translate(70%, 50%);
+}

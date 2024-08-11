@@ -1,0 +1,25 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 30px;
+
+  .card {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center !important;
+    color: black;
+    text-align: left;
+    align-items: center;
+
+    .box{
+      height: 70px;
+      width: 70px;
+      border-radius: 10px;
+      background-color: black;
+      margin-bottom: 25px;
+    }
+  }
+}

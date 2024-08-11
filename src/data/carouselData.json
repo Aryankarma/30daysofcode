@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "image": "https://via.placeholder.com/300x200?text=Code+Screen",
+    "title": "Web Development",
+    "description": "Id eros pellentesque facilisi id mollis faucibus commodo enim.",
+    "linkText": "More Info",
+    "linkUrl": "#"
+  },
+  {
+    "id": 2,
+    "image": "https://via.placeholder.com/300x200?text=Design+Screen",
+    "title": "UI/UX Design",
+    "description": "Quisque pharetra, dolor sit amet tincidunt tempor, nisi sapien laoreet metus.",
+    "linkText": "Learn More",
+    "linkUrl": "#"
+  },
+  {
+    "id": 3,
+    "image": "https://via.placeholder.com/300x200?text=Data+Analysis",
+    "title": "Data Analysis",
+    "description": "Aliquam erat volutpat. Nulla facilisi. Sed ut sem volutpat, semper neque ut.",
+    "linkText": "Discover",
+    "linkUrl": "#"
+  },
+  {
+    "id": 4,
+    "image": "https://via.placeholder.com/300x200?text=Cloud+Computing",
+    "title": "Cloud Computing",
+    "description": "Curabitur tincidunt magna vel erat scelerisque, at egestas justo varius.",
+    "linkText": "Explore",
+    "linkUrl": "#"
+  }
+]

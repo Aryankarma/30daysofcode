@@ -1,0 +1,25 @@
+$mainPurple: #7848F4;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fakeOutline {
+  outline: 2px solid red;
+}
+
+@mixin textGrad1{
+    background: -webkit-linear-gradient(45deg, #7367F0 12%, #EDAEF8 105.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grad1{
+    @include textGrad1;
+    font-size: 42px;
+}
+.container{
+    @include flexCenter;
+}

@@ -1,0 +1,42 @@
+$mainPurple: #7848F4;
+
+.container {
+    width: 100vw !important;
+    margin: 150px auto;
+
+  .subcontainer {
+    width: 100vw;
+    display: flex;
+
+    .content {
+      margin: auto;
+      width: 50%;
+      left: 0;
+      text-align: left;
+      gap: 25px;
+      display: flex;
+      flex-direction: column;
+
+      p{
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 40.7px;
+        color: #000000;
+        opacity: .67;
+      }
+      h1 {
+        font-size: 62px;
+        font-weight: 700;
+        line-height: 70px;
+        color: #101130;
+      }
+      .signupbtn{
+        background-color: $mainPurple;
+        color: white;
+        height: 60px;
+        width: 200px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
