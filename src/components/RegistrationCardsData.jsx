@@ -11,14 +11,14 @@ function RegistrationCards({ data }) {
   };
     
   return (
-    <div className="container">
+    <div className="containerOwn">
       <div className={styles.cards}>
         {data.map((input) => {
           return (
             <div key={input.id} className={styles.card}>
-                  <img src={iconMap[input.id]} alt={input.title} />
-                  <p className="fw-bold">{input.step}</p>
-                  <p>{input.subheading}</p>
+              <img src={iconMap[input.id]} alt={input.title} />
+              <p className="fw-bold">{input.step}</p>
+              <p>{input.subheading}</p>
             </div>
           );
         })}

@@ -1,6 +1,6 @@
+import styles from "./App.module.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import styles from "./App.module.scss";
 import "./styles/globals.scss";
 import signupbtnarrow from "./assets/images/signupbtnarrow.png";
 import LeftSide from "./assets/images/Leftside.png";
@@ -19,20 +19,19 @@ import giftBox from "./assets/images/giftboxes.png";
 import learningObjectiveCardsData from "./data/learningObjectiveCardsData.json";
 import LearningObjectiveCardComponent from "./components/LearningObjectiveCardComponent.jsx";
 import languageBoxes from "./assets/images/languageBoxes.png";
-import codeIconBlack from "./assets/images/codeiconblack.png"
-import registrationCardsData from "./data/registrationCardsData.json"
+import codeIconBlack from "./assets/images/codeiconblack.png";
+import registrationCardsData from "./data/registrationCardsData.json";
 import RegistrationCardsData from "./components/RegistrationCardsData.jsx";
 import BootcampsCarousel from "./components/BootcampsCarousel.jsx";
-import carouselItemsData from "./data/carouselData.json"
+import carouselItemsData from "./data/carouselData.json";
 import CompanyListComponent from "./components/companyListComponent.jsx";
-import meetOurMentors from "./assets/images/meetourmentors.png"
+import meetOurMentors from "./assets/images/meetourmentors.png";
 import ReviewsCarousel from "./components/ReviewsCarousel.jsx";
-import ReviewsCarouselData from "./data/reviewCarouselData.json"
+import ReviewsCarouselData from "./data/reviewCarouselData.json";
 import faqData from "./data/faqData.json";
 import FAQ from "./components/Faq.jsx";
 
 function App() {
-
   return (
     <div className={styles.App}>
       <Header />
@@ -43,7 +42,7 @@ function App() {
         </h2>
         <form className={`d-flex ${styles.searchForm}`} role="search">
           <input
-            className="form-control me-2"
+            className="form-control"
             type="search"
             placeholder="Technology"
             aria-label="Search"
@@ -55,16 +54,17 @@ function App() {
             <option value="3">Three</option>
           </select>
           <button
-            className={`btn btn-outline-success ${styles.searchBtn}`}
+            className={`btn btn-outline-success w-100 ${styles.searchBtn}`}
             type="submit"
           >
             Search
           </button>
         </form>
-        <p className="mb-0">Batch Registrations are opening soon</p>
+        <p className={`mb-0 ${styles.registrationPtag}`}>
+          Batch Registrations are opening soon
+        </p>
         <div
-          className="d-flex align-items-end gap-4"
-          style={{ transform: "translatex(-15%)" }}
+          className={`d-flex align-items-end gap-4 ${styles.arrowBtnContainer}`}
         >
           <img className={styles.img} src={signupbtnarrow} alt="asdfs" />
           <button className={` ${styles.signUpbtn}`}>Sign Up Today</button>
@@ -125,7 +125,7 @@ function App() {
 
       <AdvantagesCardComponent data={advantagesCardsData} />
 
-      <div className="container">
+      <div className="containerOwn">
         <div className={`${styles.bonusBox}`}>
           <div className={styles.content}>
             <h2 className={`grad1 fw-bold ${styles.heading2}`}>
@@ -137,12 +137,14 @@ function App() {
               highest scores.
             </p>
           </div>
-          <img
-            className={styles.datacodeCertificate}
-            src={datacodeCertificate}
-            alt=""
-          />
-          <img className={styles.giftBox} src={giftBox} alt="" />
+          <div className={styles.images}>
+            <img
+              className={styles.datacodeCertificate}
+              src={datacodeCertificate}
+              alt=""
+            />
+            <img className={styles.giftBox} src={giftBox} alt="" />
+          </div>
         </div>
       </div>
 
@@ -153,12 +155,12 @@ function App() {
 
       <hr className={styles.space} />
 
-      <div className={`container ${styles.languageBoxContainer}`}>
-        <img src={languageBoxes} alt="languageBoxes" />
+      <div className={`containerOwn ${styles.languageBoxContainer}`}>
+        <img className={styles.languageBoxes} src={languageBoxes} alt="languageBoxes" />
         <div className={` text-start ${styles.content}`}>
           <h2 className={`grad1 fw-bold ${styles.heading2}`}>
-            How to Register for <br /> 30 Days of Code{" "}
-            <img className="mx-2" src={codeIconBlack} alt="" />?
+            How to Register for 30 Days of Code{" "}
+            <img className={`mx-2 ${styles.codeicon}`} src={codeIconBlack} alt="" />?
           </h2>
           <p className="text-dark ">
             Embark on a transformative coding journey with 30 Days of Code!
@@ -169,7 +171,7 @@ function App() {
         </div>
       </div>
 
-      <div className={`container ${styles.stepsContainer}`}>
+      <div className={`containerOwn ${styles.stepsContainer}`}>
         <RegistrationCardsData data={registrationCardsData} />
       </div>
 
@@ -193,7 +195,7 @@ function App() {
       <hr className={styles.space} />
 
       <StyledHeading data={StyledHeadingData[5]} />
-      <img src={meetOurMentors} alt="" style={{width:"90vw"}} />
+      <img src={meetOurMentors} alt="" style={{ width: "90vw" }} />
 
       <hr className={styles.space} />
 
@@ -206,7 +208,6 @@ function App() {
 
       <StyledHeading data={StyledHeadingData[7]} />
       <FAQ data={faqData} />
-
     </div>
   );
 }

@@ -1,9 +1,9 @@
 .carouselCards {
-  width: calc(308px*3 + 20px*5);
+  width: calc(308px * 3 + 20px * 5);
   padding: 20px;
   margin-left: auto;
-  
-  .carouselCard{
+
+  .carouselCard {
     background-color: white;
     max-width: 308px;
     height: 425px;
@@ -13,11 +13,10 @@
     box-shadow: 5px 5px 10px 0 #33333350;
     margin: 20px 0;
 
-
-    img{
+    img {
       border-radius: 15px 15px 0 0;
     }
-    .content{
+    .content {
       display: flex !important;
       flex-direction: column;
       height: max-content;
@@ -25,5 +24,49 @@
       justify-content: space-between;
       padding: 20px 15px;
     }
+  }
+}
+
+/* Large Desktops */
+@media screen and (max-width: 1280px) {
+  .carouselCards {
+    scale: 0.85;
+    transform: translateX(75px);
+  }
+}
+
+/* Medium Desktops */
+@media screen and (max-width: 1024px) {
+  .carouselCards {
+    scale: 0.8;
+    transform: translateX(175px);
+  }
+}
+
+/* Small Desktops */
+@media screen and (max-width: 768px) {
+  .carouselCards {
+    scale: 0.7;
+    // transform: translateX(175px);
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 640px) {
+  .carouselCards {
+    scale: 0.6;
+      // transform: translate(75px, -75px);
+
+    .carouselCard {
+
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .carouselCards {
+    scale: 0.9;
+    transform: translateX(75px);
   }
 }

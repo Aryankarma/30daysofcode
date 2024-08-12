@@ -1,3 +1,51 @@
-.companyList{
-    margin: 3rem 0;
+.companyList {
+  margin: 3rem 0;
+  display: grid;
+}
+
+/* Large Desktops */
+@media screen and (max-width: 1280px) {
+  .companyList {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Medium Desktops */
+@media screen and (max-width: 1024px) {
+  .companyList {
+    margin: 2rem 3rem 0 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Small Desktops */
+@media screen and (max-width: 768px) {
+  .companyList {
+    margin: 2rem 3rem 0 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 640px) {
+  .companyList {
+    margin: 0 10%;
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .companyList {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
 }

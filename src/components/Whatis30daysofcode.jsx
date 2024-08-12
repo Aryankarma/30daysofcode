@@ -9,7 +9,7 @@ import CardComponent from "../components/CardComponent";
 
 function Whatis30daysofcode() {
   return (
-    <div className={`container ${styles.container}`}>
+    <div className={`containerOwn ${styles.container}`}>
       <div className={styles.subcontainer}>
         <div className={styles.content}>
           <p>What is 30 Days of Code??</p>
@@ -17,7 +17,8 @@ function Whatis30daysofcode() {
             A quality place to learn and{" "}
             <span>
               <img src={heart} alt="" />
-            </span> <br />
+            </span>{" "}
+            <br />
             <span className="grad1">Problem Solving</span>
           </h1>
           <button className={`btn ${styles.signupbtn} `}>Sign Up Now</button>

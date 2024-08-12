@@ -28,7 +28,7 @@ const PrevArrow = (props) => {
       style={{
         borderRadius: "50%",
         padding: "30px",
-        left: "-400px",
+        left: "-350px",
         zIndex: 1,
       }}
       onClick={onClick}

@@ -2,7 +2,7 @@ import styles from "../styles/components/learningObjectiveCardComponent.module.s
 
 function LearningObjectiveCardComponent({ data }) {
   return (
-    <div className="container">
+    <div className="containerOwn">
       <div className={styles.cards}>
         {data.map((input) => {
           return (

@@ -3,7 +3,7 @@ import logo from "../assets/images/heartred.png";
 
 function AdvantagesCardComponent({ data }) {
   return (
-    <div className="container">
+    <div className="containerOwn">
       <div className={styles.cards}>
         {data.map((input) => {
           return (
@@ -14,7 +14,7 @@ function AdvantagesCardComponent({ data }) {
                 <h4 className="fw-bold">{input.title}</h4>
               </div>
               <p className="fw-normal">{input.description}</p>
-            </div>
+            </div>  
           );
         })}
       </div>

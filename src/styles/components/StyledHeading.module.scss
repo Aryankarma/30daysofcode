@@ -1,6 +1,6 @@
-.headingContainer{
+.headingContainer {
   // margin-top: 150px;
-  
+
   .heading1 {
     color: #001d6c;
     font-size: 20px;
@@ -13,4 +13,28 @@
     line-height: 46.2px;
     margin-bottom: 50px;
   }
+}
+
+/* Large Desktops */
+@media (max-width: 1280px) {
+}
+
+/* Medium Desktops */
+@media screen and (max-width: 1024px) {
+}
+
+/* Small Desktops */
+@media screen and (max-width: 768px) {
+}
+
+/* Tablets */
+@media screen and (max-width: 640px) {
+  .headingContainer {
+    scale: 0.85;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  
 }

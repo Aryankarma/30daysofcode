@@ -11,3 +11,11 @@
     align-items: center;
   }
 }
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+.cards {
+  scale: .75;  
+}
+}

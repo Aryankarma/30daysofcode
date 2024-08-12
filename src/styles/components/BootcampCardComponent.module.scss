@@ -1,17 +1,5 @@
 $mainPurple: #7848f4;
 
-// @media (min-width: 992px) {
-//   .cards {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// }
-
-// @media (min-width: 576px) {
-//   .cards {
-//     grid-template-columns: 1fr;
-//   }
-// }
-
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -25,10 +13,9 @@ $mainPurple: #7848f4;
     padding: 25px;
     display: flex;
     flex-direction: column;
-    gap: 15px;  
+    gap: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-
 
     .tags {
       display: flex;
@@ -72,4 +59,35 @@ $mainPurple: #7848f4;
       }
     }
   }
+}
+
+/* Large Desktops */
+@media (min-width: 1280px) {
+}
+
+/* Medium Desktops */
+@media screen and (max-width: 1024px) {
+  .cards {
+    scale: 0.9;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+}
+
+/* Small Desktops */
+@media screen and (max-width: 768px) {
+  .cards {
+    scale: 0.9;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 10px;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 640px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
 }

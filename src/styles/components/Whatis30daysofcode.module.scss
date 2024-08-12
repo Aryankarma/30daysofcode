@@ -1,28 +1,30 @@
-$mainPurple: #7848F4;
+$mainPurple: #7848f4;
 
 .container {
-    width: 100vw !important;
-    margin: 150px auto;
+  width: 100vw !important;
+  margin: 150px auto;
 
   .subcontainer {
-    width: 100vw;
+    width: 85vw;
     display: flex;
+    // outline: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
 
     .content {
-      margin: auto;
-      width: 50%;
-      left: 0;
       text-align: left;
       gap: 25px;
       display: flex;
       flex-direction: column;
+      // outline: 1px solid black;
+      width: 45%;
 
-      p{
+      p {
         font-size: 37px;
         font-weight: 700;
         line-height: 40.7px;
         color: #000000;
-        opacity: .67;
+        opacity: 0.67;
       }
       h1 {
         font-size: 62px;
@@ -30,12 +32,106 @@ $mainPurple: #7848F4;
         line-height: 70px;
         color: #101130;
       }
-      .signupbtn{
+      .signupbtn {
         background-color: $mainPurple;
         color: white;
         height: 60px;
         width: 200px;
         border-radius: 5px;
+      }
+    }
+  }
+}
+
+/* Large Desktops */
+@media (max-width: 1280px) {
+  .subcontainer {
+    scale: 0.85;
+  }
+}
+
+/* Medium Desktops */
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 50px 0 !important;
+
+    .subcontainer {
+      .content {
+        p {
+          font-size: 32px !important;
+        }
+        h1 {
+          font-size: 55px !important;
+          line-height: 55px !important;
+          span {
+            font-size: 35px !important;
+          }
+        }
+        scale: 0.9;
+      }
+    }
+  }
+}
+
+/* Small Desktops */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 40px 0 !important;
+
+    .subcontainer {
+      .content {
+        scale: 0.8;
+        gap: 5px !important;
+        p {
+          font-size: 25px !important;
+        }
+        h1 {
+          font-size: 40px !important;
+          line-height: 50px !important;
+          span {
+            img {
+              scale: 0.75;
+            }
+            font-size: 25px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 640px) {
+  .container {
+    // margin: 0 !important;
+    .subcontainer {
+      flex-direction: column;
+      scale: 1;
+      .content {
+        scale: 1.05 !important;
+        width: 85% !important;
+        scale: inherit;
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 0 !important;
+    .subcontainer {
+      margin: 30px 0;
+      .content {
+        // scale: 1.05 !important;
+        text-align: center !important;
+        height: 510px;
+        width: 95% !important;
+        scale: .9 !important;
+        .signupbtn{
+          width: unset;
+          scale: .9;
+        }
       }
     }
   }

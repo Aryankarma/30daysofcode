@@ -16,3 +16,37 @@
     margin: 0 auto;
   }
 }
+
+/* Large Desktops */
+@media (min-width: 1280px) {
+}
+
+/* Medium Desktops */
+@media screen and (max-width: 1024px) {
+}
+
+/* Small Desktops */
+@media screen and (max-width: 768px) {
+}
+
+/* Tablets */
+@media screen and (max-width: 640px) {
+  .carouselCards {
+    .carouselCard {
+      width: 70vw !important;
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .carouselCards {
+  .carouselCard {
+    padding: 1rem;
+    gap: .5rem;
+    h6{
+      scale: .9 ;
+    }
+  }
+}
+}

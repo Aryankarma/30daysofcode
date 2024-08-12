@@ -14,12 +14,55 @@
     text-align: left;
     align-items: center;
 
-    .box{
+    .box {
       height: 70px;
       width: 70px;
       border-radius: 10px;
       background-color: black;
       margin-bottom: 25px;
+    }
+  }
+}
+
+/* Large Desktops */
+@media (min-width: 1280px) {
+}
+
+/* Medium Desktops */
+@media screen and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    scale: 0.9;
+    gap: 0;
+    padding: 0;
+  }
+}
+
+/* Small Desktops */
+@media screen and (max-width: 768px) {
+}
+
+/* Tablets */
+@media screen and (max-width: 640px) {
+  .cards {
+    scale: 1;
+    gap: 0;
+    padding: 0;
+    .card {
+      padding: 15px;
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .cards {
+        grid-template-columns: repeat(1, 1fr);
+    scale: 1;
+    gap: 0;
+    padding: 0;
+    .card {
+      padding: 15px;
     }
   }
 }

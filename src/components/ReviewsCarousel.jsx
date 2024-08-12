@@ -20,6 +20,15 @@ function ReviewsCarousel({ data }) {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
