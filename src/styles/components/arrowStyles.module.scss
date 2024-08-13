@@ -1,14 +1,30 @@
-.rightArrow{
-    scale: 1.5;
- &:hover{
-    transform: translate(10%,0%);
+.rightArrow {
+  scale: 1.5;
+  &:hover {
+    transform: translate(10%, 0%);
     transition: 300ms;
- }
+  }
 }
-.leftArrow{
-    scale: 1.5;
- &:hover{
-    transform: translate(-10%,0%);
+.leftArrow {
+  scale: 1.5;
+  &:hover {
+    transform: translate(-10%, 0%);
     transition: 300ms;
- }
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 750px) {
+  .rightArrow,
+  .leftArrow {
+   scale: 1.25;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+     .rightArrow,
+  .leftArrow {
+   scale: 1.15;
+  }
 }

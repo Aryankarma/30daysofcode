@@ -4,6 +4,13 @@
 }
 
 /* Large Desktops */
+@media screen and (min-width: 1280px) {
+  .companyList {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Large Desktops */
 @media screen and (max-width: 1280px) {
   .companyList {
     grid-template-columns: repeat(6, 1fr);

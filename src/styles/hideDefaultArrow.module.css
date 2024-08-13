@@ -1,9 +1,4 @@
 .slick-prev:before, .slick-next:before {
-  content: ''; 
+  content: '' !important; 
   
 }
-
-.slick-prev, .slick-next {
-  /* display: none !important; */
-}
-  

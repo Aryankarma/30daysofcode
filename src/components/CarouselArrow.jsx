@@ -8,10 +8,9 @@ const NextArrow = (props) => {
     <div
       className={className}
       style={{
-        display: "block",
-        borderRadius: "50%",
-        padding: "30px",
-        left: "-250px",
+        right: "40%",
+        zIndex: 5,
+        top:"100%",
       }}
       onClick={onClick}
     >
@@ -26,10 +25,9 @@ const PrevArrow = (props) => {
     <div
       className={className}
       style={{
-        borderRadius: "50%",
-        padding: "30px",
-        left: "-350px",
-        zIndex: 1,
+        left: "40%",
+        top: "100%",
+        zIndex: 5,
       }}
       onClick={onClick}
     >
