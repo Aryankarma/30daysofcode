@@ -1,47 +1,23 @@
 import styles from "../styles/components/Header.module.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 function Header() {
-    return (
-      <nav className={`navbar navbar-expand-lg bg-light ${styles.bg}`}>
-        <div className="container-fluid">
-          <a className="navbar-brand" href=",">
-            Navbar
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav text-start ms-auto mb-2 mb-lg-0">
-              <li className="nav-item ">
-                <a className="nav-link" aria-current="page" href=",">
-                  Eleven
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href=",">
-                  Twelve
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href=".">
-                  Thirteen
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    );
+  return (
+    <Navbar expand="lg" bg="light" className={styles.bg}>
+      <Container style={{background:"white"}} fluid>
+        <Navbar.Brand href=",">Navbar</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarSupportedContent" />
+        <Navbar.Collapse id="navbarSupportedContent">
+          <Nav className="ms-auto mb-2 mb-lg-0">
+            <Nav.Link href="">Eleven</Nav.Link>
+            <Nav.Link href=",">Twelve</Nav.Link>
+            <Nav.Link href=".">Thirteen</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
 export default Header;
